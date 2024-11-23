@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Palette pour le mode sombre */
+  --primary-color: #007bff; /* Bleu principal */
+  --primary-hover: #0056b3; /* Survol bleu principal */
+  --accent-color: #646cff; /* Accent secondaire */
+  --accent-hover: #535bf2; /* Accent secondaire au survol */
+  --text-color: #e0e0e0; /* Texte principal (clair pour mode sombre) */
+  --background-color: #ffffff; /* Fond principal sombre */
+  --card-bg: #1e1e1e; /* Fond des cartes */
+  --border-color: #333333; /* Couleur des bordures */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color); /* Fond sombre */
+  color: var(--text-color); /* Texte clair */
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-color); /* Couleur des liens */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transition fluide */
+}
+
+a:hover {
+  color: var(--accent-hover); /* Accent plus foncé au survol */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color); /* Teinte uniforme pour les titres */
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  background-color: var(--primary-color); /* Bouton principal */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover); /* Couleur de survol */
+}
+
+.card {
+  background-color: var(--card-bg); /* Fond sombre des cartes */
+  color: var(--text-color); /* Texte clair */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color); /* Bordure subtile */
+}
+
+.card h3 {
+  color: var(--accent-color); /* Titre accentué */
+}
+
+.card p {
+  color: var(--text-color); /* Texte des cartes */
+}
